@@ -15,9 +15,6 @@ RUN apt-get update -y && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
-# Download JDownloader2
-RUN wget http://installer.jdownloader.org/JDownloader.jar
-
 # Volume for downloads and config
 VOLUME ["/root/Downloads", "/jdownloader/cfg"]
 
